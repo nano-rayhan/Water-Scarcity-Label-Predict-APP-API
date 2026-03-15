@@ -23,4 +23,4 @@ def predicted(data: UserInput):
     }])
     
 
-    return JSONResponse(status_code=200, content={'predicted': predict_out(user_input)})
+    return JSONResponse(status_code=200, content=predict_out(user_input))
