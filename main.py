@@ -7,17 +7,6 @@ from model.predict import predict_out
 app = FastAPI()
 
 
-    
-@app.get('/')
-def home():
-    return {'message': 'Welcome to Water Scarcity Label Predict APP'}
-
-@app.get('/health')
-def health_check():
-    return {
-        'status' : 'OK',
-    }
-
 @app.post('/predict')
 def predicted(data: UserInput):
 
